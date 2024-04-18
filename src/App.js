@@ -17,7 +17,7 @@ function App() {
 
   console.log(questions[0]);
   const { question, incorrect_answers, correct_answer } = questions[0]
-  const answer = { ...incorrect_answers, correct_answer }
+  const answers = { ...incorrect_answers, correct_answer }
 
   return (
     <main><Modal />
@@ -28,13 +28,14 @@ function App() {
         <article className="container">
           <h2 dangerouslySetInnerHTML={{ __html: question }} />
           <div className="btn-container">
-            {correct.map((answer, index) => {
+            {answers.map((answer, index) => {
               return (
                 <button className="answer-btn" key={index} dangerouslySetInnerHTML={{ __html: answer }} />
               )
             })}
           </div>
         </article>
+        <button className="next-question">next question</button>
       </section>
     </main>
   )
