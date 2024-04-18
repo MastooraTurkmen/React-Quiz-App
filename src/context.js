@@ -9,11 +9,16 @@ const table = {
 
 const API_ENDPOINT = 'https://opentdb.com/api.php?'
 
-const url = ''
+const tempUrl = 'https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple'
 
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
+  const [waiting, setWaiting] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [questions, setQuestions] = useState([]);
+  const [index, setIndex] = useState(0);
+
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
 }
 // make sure use
