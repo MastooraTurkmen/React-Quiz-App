@@ -6,7 +6,7 @@ import Loading from './Loading'
 import Modal from './Modal'
 
 function App() {
-  const { waiting, loading, questions, correct } = useGlobalContext()
+  const { waiting, loading, questions, index, correct } = useGlobalContext()
 
   if (waiting) {
     return <SetupForm />
