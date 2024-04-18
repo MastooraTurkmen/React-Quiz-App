@@ -6,7 +6,7 @@ import Loading from './Loading'
 import Modal from './Modal'
 
 function App() {
-  const { waiting, loading, questions, index, correct, nextQuestions } = useGlobalContext()
+  const { waiting, loading, questions, index, correct, nextQuestions, checkAnswer } = useGlobalContext()
 
   if (waiting) {
     return <SetupForm />
@@ -30,7 +30,7 @@ function App() {
           <div className="btn-container">
             {answers.map((answer, index) => {
               return (
-                <button className="answer-btn" key={index} dangerouslySetInnerHTML={{ __html: answer }} />
+                <button onClick={() => checkAnswer(correct_answer === answer)} className="answer-btn" key={index} dangerouslySetInnerHTML={{ __html: answer }} />
               )
             })}
           </div>
