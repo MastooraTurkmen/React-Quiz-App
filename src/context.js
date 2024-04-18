@@ -10,6 +10,7 @@ const table = {
 const API_ENDPOINT = 'https://opentdb.com/api.php?'
 
 const tempUrl = 'https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple'
+// const tempUrl = 'https://opentdb.com/api.php?amount=50&category=24&difficulty=easy'
 
 const AppContext = React.createContext()
 
@@ -30,6 +31,15 @@ const AppProvider = ({ children }) => {
     if (response) {
       const data = response.data.results
       console.log(data);
+      if (data.length > 0) {
+        setQuestions(data);
+        setLoading(false);
+        setWaiting(false);
+        setError(false);
+      } else {
+        setWaiting(true);
+        setError(true)
+      }
     } else {
       setWaiting(true)
     }
