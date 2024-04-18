@@ -55,6 +55,13 @@ const AppProvider = ({ children }) => {
     })
   }
 
+  const checkAnswer = (value) => {
+    if (value) {
+      setCorrect((oldCorrect) => oldCorrect + 1)
+    }
+    nextQuestions()
+  }
+
   useEffect(() => {
     fetchData(tempUrl)
   }, [])
@@ -67,7 +74,8 @@ const AppProvider = ({ children }) => {
     correct,
     error,
     isModalOpen,
-    nextQuestions
+    nextQuestions,
+    checkAnswer
   }}>{children}</AppContext.Provider>
 }
 // make sure use
