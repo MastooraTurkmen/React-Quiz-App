@@ -17,7 +17,15 @@ function App() {
 
   console.log(questions[0]);
   const { question, incorrect_answers, correct_answer } = questions[index]
-  const answers = Object.values({ ...incorrect_answers, correct_answer });
+  // const answers = Object.values({ ...incorrect_answers, correct_answer });
+  const answers = [...incorrect_answers]
+  const tempIndex = Math.floor(Math.random() * 4)
+  if (tempIndex === 3) {
+    answers.push(correct_answer)
+  } else {
+    answers.push(answers[tempIndex])
+    answers[tempIndex] = correct_answer
+  }
 
   return (
     <main>
