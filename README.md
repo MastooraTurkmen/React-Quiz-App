@@ -25,4 +25,4 @@
 ##### Final Answers, hhhh
 I have got 20% 
 
-![alt text](image-6.png)
+![alt text](./screenshots/image-6.png)
