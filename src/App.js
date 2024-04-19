@@ -18,7 +18,6 @@ function App() {
   console.log(questions[0]);
   const { question, incorrect_answers, correct_answer } = questions[index]
   const answers = Object.values({ ...incorrect_answers, correct_answer });
-  // const answers = { ...incorrect_answers, correct_answer }
 
   return (
     <main>
