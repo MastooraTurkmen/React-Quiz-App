@@ -16,10 +16,10 @@
 ![alt text](./screenshots/image-3.png)
 
 ##### Fourth question
-![alt text](image-4.png)
+![alt text](./screenshots/image-4.png)
 
 ##### Fifth question
-![alt text](image-5.png)
+![alt text](./screenshots/image-5.png)
 
 
 ##### Final Answers, hhhh
