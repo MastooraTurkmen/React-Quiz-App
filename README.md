@@ -10,10 +10,10 @@
 
 ##### Second quesion
 
-![alt text](image-2.png)
+![alt text](./screenshots/image-2.png)
 
 ##### Third question
-![alt text](image-3.png)
+![alt text](./screenshots/image-3.png)
 
 ##### Fourth question
 ![alt text](image-4.png)
