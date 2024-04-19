@@ -14,3 +14,6 @@
 
 ##### Third question
 ![alt text](image-3.png)
+
+##### Fourth question
+![alt text](image-4.png)
