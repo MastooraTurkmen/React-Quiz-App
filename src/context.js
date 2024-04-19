@@ -9,6 +9,7 @@ const table = {
 
 const API_ENDPOINT = 'https://opentdb.com/api.php?'
 
+const url = ''
 const tempUrl = 'https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple'
 // const tempUrl = 'https://opentdb.com/api.php?amount=50&category=24&difficulty=easy'
 
