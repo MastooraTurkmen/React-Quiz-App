@@ -20,3 +20,9 @@
 
 ##### Fifth question
 ![alt text](image-5.png)
+
+
+##### Final Answers, hhhh
+I have got 10% 
+
+![alt text](image-6.png)
