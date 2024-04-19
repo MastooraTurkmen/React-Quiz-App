@@ -6,4 +6,9 @@
 
 ##### First question
 
+![alt text](image-1.png)
+
 ##### Second quesion
+
+![alt text](image-2.png)
+
