@@ -2,11 +2,11 @@
 
 #### Qestions-Over 10
 
-![alt text](image.png)
+![alt text](./screenshots/image.png)
 
 ##### First question
 
-![alt text](image-1.png)
+![alt text](./screenshots/image-1.png)
 
 ##### Second quesion
 
