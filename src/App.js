@@ -23,7 +23,7 @@ function App() {
     <main>
       <Modal />
       <section className="quiz">
-        <p className="correct-answer">
+        <p className="correct-answers">
           correct answers :{correct}/{index}
         </p>
         <article className="container">
